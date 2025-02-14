@@ -9,7 +9,7 @@
 📅 **Semester:** **Spring 2025**
 
 
- ## **🟢 Part 1: Loan Eligibility & Interest Rate Calculation [4 marks]**  
+ ## **🟢 Part 1: Loan Eligibility & Interest Rate Calculation**  
 
 📌 **Requirement:**  
 SecureBank only approves loans if the **customer meets all eligibility criteria**. The system should:  
@@ -52,7 +52,7 @@ SecureBank only approves loans if the **customer meets all eligibility criteria*
 
     check_loan_eligibility()
 
-## **🟢 Part 2: Investment Risk Assessment [4 marks]**  
+## **🟢 Part 2: Investment Risk Assessment**  
 
 📌 **Requirement:**  
 SecureBank offers **investment analysis services**. The system should evaluate a **portfolio of stocks** and classify the risk level based on stock returns:  
@@ -110,7 +110,7 @@ SecureBank offers **investment analysis services**. The system should evaluate a
 
      display(*return_widgets, assess_button, output)
 
-   ## **🟢 Part 3: Loan Repayment Tracker [4 marks]**  
+   ## **🟢 Part 3: Loan Repayment Tracker**  
 
 📌 **Requirement:**  
 Customers who receive a loan should be able to track their **loan balance** as they make monthly payments. The system should:  
@@ -169,7 +169,7 @@ Customers who receive a loan should be able to track their **loan balance** as t
             display(initial_loan_balance, monthly_payment, track_button, output)
 
             
-## **🟢 Part 4: Stock Price Monitoring and Trading Strategy [4 marks]**  
+## **🟢 Part 4: Stock Price Monitoring and Trading Strategy**  
 
 📌 **Requirement:**  
 A stock trader wants to **track stock prices daily** and **sell when the price reaches PKR 200**. The system should:  
@@ -233,7 +233,7 @@ A stock trader wants to **track stock prices daily** and **sell when the price r
             display(stock_prices_text, monitor_button, output)
 
             
-## **🟢 Part 5: Currency Exchange Rate Tracker [4 marks]**  
+## **🟢 Part 5: Currency Exchange Rate Tracker**  
 
 📌 **Requirement:**  
 SecureBank provides **real-time currency exchange tracking**. The system should:  
