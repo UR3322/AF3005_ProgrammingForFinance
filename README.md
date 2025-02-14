@@ -110,7 +110,7 @@ SecureBank offers **investment analysis services**. The system should evaluate a
 
      display(*return_widgets, assess_button, output)
 
-     ## **🟢 Part 3: Loan Repayment Tracker [4 marks]**  
+   ## **🟢 Part 3: Loan Repayment Tracker [4 marks]**  
 
 📌 **Requirement:**  
 Customers who receive a loan should be able to track their **loan balance** as they make monthly payments. The system should:  
