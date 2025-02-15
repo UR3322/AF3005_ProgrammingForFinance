@@ -21,9 +21,19 @@ SecureBank only approves loans if the **customer meets all eligibility criteria*
    - **Below 650 → Loan Rejected**  
 ✔ **If the applicant is unemployed, the loan is rejected immediately.**  
 
-### **Implementation Steps:**  
-🔹 **Step 1:** Structure the `if-elif-else` statements for this logic.  
-🔹 **Step 2:** Implement a Python program using **ipywidgets** for interactive user input (income, credit score, employment status) to decide whether the loan is approved or rejected.
+### **Implementation Steps:** 
+
+**1. Input: Collects employment, income, and credit score from the user.**
+
+**2. Employment Check: Immediately rejects the loan if the applicant is unemployed.**
+
+**3. Income Check: Rejects the loan if income is below 50,000 PKR.**
+
+**4. Credit Score Check: Determines interest rate (5% or 8%) based on credit score; rejects the loan if too low.**
+
+**5. Approval/Rejection: Prints "Loan Approved!" with the interest rate or "Loan Rejected!" with the reason.**
+
+**6. Execution: check_loan_eligibility() starts the process.**
 
 ---
        def check_loan_eligibility():
@@ -61,9 +71,18 @@ SecureBank offers **investment analysis services**. The system should evaluate a
 ✔ If **all stock returns are 5% or above**, classify as **Low Risk**.  
 
 ### **Implementation Steps:**  
-🔹 **Step 1:** Use loops to iterate through the list of stock returns.  
-🔹 **Step 2:** Implement `if-elif` conditions to classify the risk.  
-🔹 **Step 3:** Write a Python program using **ipywidgets** to allow users to **input stock returns interactively** and receive a risk assessment.
+ **1. Input: Collects stock returns (percentages) from the user via interactive widgets.** 
+ 
+ **2. High Risk Check: If ANY stock has a negative return, the portfolio is classified as "High Risk".** 
+ 
+ **3. Medium Risk Check: If ALL stocks have positive returns, but at least one is below 5%, it's "Medium Risk".** 
+ 
+**4. Low Risk: If ALL stock returns are 5% or higher, it's "Low Risk".** 
+
+**5. Output: Displays the calculated portfolio risk level ("High Risk", "Medium Risk", or "Low Risk").** 
+
+**6. Execution: Interactive widgets and a button are displayed, triggering the assessment upon button click.**
+
 
 ---
 
@@ -120,9 +139,17 @@ Customers who receive a loan should be able to track their **loan balance** as t
 ✔ Display the remaining balance **after each payment**.  
 
 ### **Implementation Steps:**  
-🔹 **Step 1:** Choose an appropriate loop (`for` or `while`).  
-🔹 **Step 2:** Ensure the loop **stops once the loan is fully paid**.  
-🔹 **Step 3:** Implement a Python program using **ipywidgets** to **simulate loan repayment interactively**.
+ **1. Input: Takes the initial loan balance and monthly payment amount from the user through interactive widgets.**
+ 
+ **2. Repayment Simulation: Simulates monthly loan repayments by deducting the payment from the balance.**
+ 
+ **3. Zero Balance Condition: Stops the simulation when the loan balance reaches zero (or goes negative, then sets to zero).**
+ 
+ **4. Display Balance: Displays the remaining loan balance after each monthly payment.**
+ 
+ **5. Looping: Continues the repayment simulation until the loan is fully paid off.**
+ 
+ **6. Execution: Interactive widgets (initial balance, payment) and a "Track Repayment" button are displayed.  Clicking the button triggers the repayment tracking process.**
 
 ---
 
@@ -178,9 +205,17 @@ A stock trader wants to **track stock prices daily** and **sell when the price r
 ✔ Stop tracking **once the price reaches PKR 200**.  
 
 ### **Implementation Steps:**  
-🔹 **Step 1:** Handle missing stock data using `continue`.  
-🔹 **Step 2:** Stop tracking once the stock hits the target price (`break`).  
-🔹 **Step 3:** Write a Python program using **ipywidgets** to **process stock prices interactively** and trigger alerts when conditions are met.
+ **1. Input: Accepts a comma-separated list of daily stock prices from the user via a text area widget.** 
+
+ **2. Data Cleaning: Skips missing stock data (None values or empty strings) and handles invalid price formats.**
+
+ **3. Price Monitoring: Iterates through the cleaned list of stock prices, displaying each day's price.**
+
+ **4. Sell Trigger: Stops monitoring and issues an alert when the stock price reaches or exceeds PKR 200.**
+
+ **5. Iteration Stop: The monitoring process terminates once the sell trigger condition is met.**
+
+ **6. Execution: Displays the text area for input, a "Start Monitoring" button, and an output area. Clicking the button initiates the price monitoring process.**
 
 ---
 
@@ -242,10 +277,21 @@ SecureBank provides **real-time currency exchange tracking**. The system should:
 ✔ Print exchange rates daily and stop when the **target rate is reached**.  
 
 ### **Implementation Steps:**  
-🔹 **Step 1:** Choose a suitable loop (`for` or `while`).  
-🔹 **Step 2:** Stop the loop when the exchange rate reaches the target.  
-🔹 **Step 3:** Implement a Python program using **ipywidgets** to **track the currency exchange rate interactively**.
 
+ **1. Input: Takes the initial and target exchange rates (PKR/USD) from the user through interactive widgets.**
+ 
+ **2. Daily Rate Increment: Simulates the daily increase of the exchange rate by 1 PKR.**
+ 
+ **3. Target Reached Condition: Stops tracking when the exchange rate reaches or exceeds the specified target rate.**
+ 
+ **4. Display Daily Rate: Prints the exchange rate for each day of the simulation.**
+ 
+ **5. Termination Message: Displays a message indicating that the target exchange rate has been reached.**
+
+ **6. Execution: Displays widgets for initial and target rates, a "Track Exchange Rate" button, and an output area. 
+  Clicking the button starts the exchange rate tracking process.**
+
+  
 ---
 
          import ipywidgets as widgets
